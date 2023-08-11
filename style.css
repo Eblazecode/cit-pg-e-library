@@ -1182,8 +1182,8 @@ address { font-style: italic; }
 }
 /* mini header */
 .wm-mini-header {
-    background-image: url("extra-images/mini-header.jpg");
-    background-repeat: no-repeat;
+    background-image: url("images/ictbg.jpg");
+    background-repeat: repeat;
     text-align: center;
     padding: 75px 0px 69px 0px;
     position: relative;

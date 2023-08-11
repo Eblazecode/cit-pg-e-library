@@ -53,7 +53,8 @@
 .wm-arrow-left:hover,.wm-ourcourses-right .wm-previous-icon,.wm-ourcourses-right .wm-Next-icon,.widget_professor-info > .wm-read-more,.widget_course-price a,.widget_course-price > a:hover,.widget_professor-info > .wm-read-more:hover,
 .wm-student-dashboard-form form input[type="submit"],.wm-favorite > .wm-remove, .wm-profile-info article ul li .wm-select-checkbox input[type="checkbox"] + label span,
 .wm-student-nav-text a,.wm-our-professors figcaption > a,.wm-tabs-listing .nav-tabs > li.active a, .wm-tabs-listing > .nav-tabs > li:hover a {
-    border-color: #b99663;
+    border-color: #0c9774;
+    color: black;
 }
 .wm-banner-btn:hover,.wm-banner-one-nav-layer.slick-current .wm-banner-btn,.wm-search-course ul li input[type="submit"]:hover,.wm-subscribe-form h2:before,
 .wm-contact-form form input[type="submit"]:hover,.wm-transparent-hover,.wm-lesson-tabnav li.active a:before,.tabs-nav li:hover a,.tabs-nav li.active a,
