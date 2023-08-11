@@ -7111,5 +7111,5 @@ button.close {
 .wm-question-wrap-full          { margin-bottom: -60px; padding: 24px 0px 0px 0px; }
 .wm-contact-full-inner,.wm-minus-spacer { margin-top: -100px; }
 .whowe-are-full                 { padding: 100px 0px 74px 0px; }
-.wm-parallexthree-full          { padding: 130px 0px 110px 0px; background: url(../extra-images/conservatory-bg-2.jpg); background-attachment: fixed; }
+.wm-parallexthree-full          { padding: 130px 0px 110px 0px; background: url(../images/senate.jpg); background-attachment: fixed; background-size: contain ; }
 .our-professors-full { background-color: #f9f9f9; margin-bottom: -60px; padding: 92px 0px 70px 0px; }

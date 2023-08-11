@@ -127,7 +127,8 @@
 	.wm-courses-medium figure { width: 100%; } .wm-courses-medium figure ~ .courses-medium-text,.wm-event-medium figure { margin: 0px; float: left; width: 100%; }
 	.wm-event-medium figure ~ .wm-eventmedium-text { padding: 15px 0px; float: left; width: 100%; } .wm-event-time { right: 5px; }
 	.wm-subscribe-color { display: none; } .wm-history-list, .wm-history-list-color { padding-left: 0px; } .wm-search-courses ul li { width: 100%; margin-bottom: 15px; }
-	.wm-event-list figure ~ .wm-event-list-text { margin-left: 0px; float: left; width: 100%; } .wm-question-inner { width: 100%; } .wm-question-wrap { background: none; padding: 80px 0px; }
+	.wm-event-list figure ~ .wm-event-list-text { margin-left: 0px; float: left; width: 100%; } .wm-question-inner { width: 100%; } .wm-question-wrap 
+	{ background: none; padding: 80px 0px; }
 	.wm-parallex-two,.wm-courses-mediumsec .wm-courses-popular-wrap > figure { width: 100%; }
 	.wm-404page { margin: 0px; } .wm-404page-bg { background: none; }
 	.wm-news-medium figure { width: 100%; } .wm-news-medium figure ~ .wm-newsgrid-text,.wm-author-detail figure ~ .wm-author-text,.wm-postreviews .thumblist > ul > li figure ~ .wm-reviews-text,
