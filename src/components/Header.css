@@ -1,22 +1,29 @@
 .header {
-  background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--dark-secondary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 20px 0;
   gap: 40px;
 }
 
 .logo img {
-  height: 60px;
+  height: 50px;
   width: auto;
+  transition: var(--transition);
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 .navigation {
@@ -27,13 +34,14 @@
 }
 
 .nav-link {
-  color: #333;
+  color: var(--light-text-secondary);
   font-weight: 500;
   padding: 8px 0;
   border-bottom: 2px solid transparent;
   transition: var(--transition);
   position: relative;
   cursor: pointer;
+  font-size: 0.95rem;
 }
 
 .nav-link:hover {
@@ -55,22 +63,28 @@
   position: absolute;
   right: 0;
   font-size: 10px;
+  transition: var(--transition);
+}
+
+.nav-dropdown:hover .nav-link::after {
+  transform: rotate(180deg);
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  background: white;
+  background: var(--dark-secondary);
   border: 1px solid var(--border-color);
-  border-radius: 4px;
-  min-width: 150px;
+  border-radius: 8px;
+  min-width: 180px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   transition: var(--transition);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .nav-dropdown:hover .dropdown-menu {
@@ -82,27 +96,34 @@
 .dropdown-link {
   display: block;
   padding: 12px 20px;
-  color: #333;
+  color: var(--light-text-secondary);
   transition: var(--transition);
+  border-left: 3px solid transparent;
 }
 
 .dropdown-link:hover {
-  background-color: var(--light-bg);
+  background-color: var(--dark-tertiary);
   color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  padding-left: 23px;
 }
 
 .btn-elibrary {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
   border-bottom: none;
   margin-left: auto;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .btn-elibrary:hover {
-  background-color: #1e3a8a;
-  border-bottom-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
 }
 
 /* Mobile Responsive */
