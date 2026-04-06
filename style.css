@@ -730,6 +730,7 @@ address { font-style: italic; }
     opacity: 1;
     bottom: 0px;
 }
+
 .wm-header-number {
     float: right;
     padding: 30px 33px 29px 33px;
@@ -10255,4 +10256,37 @@ figure:hover .wm-hover-link i           { top: 50%; }
     background-color: #47d3a0;
     height: 62px;
     z-index: 0;
+}
+
+.program-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+.program-card h4 {
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    font-size: 14px;
+}
+
+.resource-highlight {
+    margin-top: 15px;
+}
+
+.resource-highlight span {
+    display: inline-block;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 12px;
 }
