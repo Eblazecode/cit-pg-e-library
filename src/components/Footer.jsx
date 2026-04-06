@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-content container">
         <div className="footer-section">
           <div className="footer-logo">
-            <img src="/images/logo.jpg" alt="VUNA e-Library Logo" width="80" />
+            <div style={{ width: '80px', height: '80px', background: 'rgba(255,255,255,0.1)', borderRadius: '8px', marginBottom: '10px' }}></div>
           </div>
           <p>Computer Science Department e-Library</p>
         </div>

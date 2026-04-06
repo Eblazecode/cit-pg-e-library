@@ -1,3 +1,8 @@
+.home {
+  width: 100%;
+  background: var(--dark-bg);
+}
+
 .hero {
   position: relative;
   background: linear-gradient(135deg, var(--primary-dark) 0%, #0c1e3d 100%);

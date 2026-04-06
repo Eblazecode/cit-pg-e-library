@@ -6,8 +6,8 @@ export default function Header() {
     <header className="header">
       <div className="header-content container">
         <div className="logo">
-          <Link to="/">
-            <img src="/images/logo.jpg" alt="VUNA e-Library Logo" width="130" />
+          <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+            <div style={{ width: '130px', height: '50px', background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(16, 185, 129, 0.2) 100%)', borderRadius: '8px' }}></div>
           </Link>
         </div>
         <nav className="navigation">
