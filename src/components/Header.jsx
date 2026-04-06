@@ -21,7 +21,7 @@ export default function Header() {
               <Link to="/phd" className="dropdown-link">PhD</Link>
             </div>
           </div>
-          <Link to="/categories" className="nav-link btn-elibrary">
+          <Link to="/books" className="nav-link btn-elibrary">
             e-LIBRARY
           </Link>
         </nav>

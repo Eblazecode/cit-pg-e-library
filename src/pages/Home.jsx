@@ -6,11 +6,11 @@ export default function Home() {
     <div className="home">
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: "url('/images/graduates.jpg')" }}>
+        <div className="hero-bg">
           <div className="hero-overlay"></div>
           <div className="hero-content container">
             <div className="logo-section">
-              <img src="/images/logo.jpg" alt="Logo" width="200" />
+              <div style={{ width: '120px', height: '120px', background: 'rgba(255,255,255,0.1)', borderRadius: '8px', margin: '0 auto' }}></div>
             </div>
             <h1>Faculty of Natural and Applied Science</h1>
             <h2>Department of Computer Science</h2>
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="container">
           <div className="welcome-grid">
             <div className="welcome-image">
-              <img src="/images/Osondu-Oguike.jpg" alt="HOD" />
+              <div style={{ width: '100%', height: '400px', background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(16, 185, 129, 0.1) 100%)', borderRadius: '12px', marginBottom: '30px' }}></div>
               <div className="image-caption">
                 <h4>Professor Osondu E. Oguike</h4>
                 <p>HOD CIT DEPARTMENT</p>
@@ -116,11 +116,11 @@ export default function Home() {
           <h2 className="section-title">Gallery</h2>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="/images/senate.jpg" alt="Senate" />
+              <div style={{ width: '100%', height: '300px', background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(16, 185, 129, 0.1) 100%)', borderRadius: '12px' }}></div>
               <h3>Senate</h3>
             </div>
             <div className="gallery-item">
-              <img src="/images/graduates.jpg" alt="Academics" />
+              <div style={{ width: '100%', height: '300px', background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%)', borderRadius: '12px' }}></div>
               <h3>Academics</h3>
             </div>
           </div>
