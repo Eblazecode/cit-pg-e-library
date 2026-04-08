@@ -7,6 +7,12 @@ export default defineConfig({
     port: 3000,
     open: false,
     middlewareMode: false,
+    allowedHosts: [
+      'localhost',
+      '127.0.0.1',
+      'sb-51ue2mzszpma.vercel.run',
+      '.vercel.run'
+    ],
     hmr: {
       protocol: 'ws',
       host: 'localhost',
