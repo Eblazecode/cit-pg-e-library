@@ -1,0 +1,87 @@
+/* Home Page Specific Styles */
+
+.wm-classic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #667eea;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.wm-classic-button:hover {
+  background-color: #764ba2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.wm-bgcolor-two {
+  background-color: #764ba2;
+}
+
+.wm-bgcolor-two:hover {
+  background-color: #667eea;
+}
+
+.wm-service-layer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.wm-service-layer li {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.wm-service-layer li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+}
+
+.wm-service-layer li span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.wm-service-layer li p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wm-banner-one-for {
+    flex-direction: column !important;
+  }
+
+  .wm-banner-one-nav-layer h1 {
+    font-size: 1.8rem;
+  }
+
+  .wm-service-layer ul {
+    flex-direction: column;
+  }
+
+  .wm-service-layer li {
+    width: 100%;
+  }
+}
