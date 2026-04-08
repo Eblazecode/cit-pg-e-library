@@ -39,12 +39,14 @@ export default function Books() {
     <div className="books-wrapper">
       <section className="books-header">
         <div className="container">
-          <h1>e-Library</h1>
-          <p>Explore our collection of computer science resources</p>
-          <div className="breadcrumb">
-            <Link to="/">Home</Link>
-            <span>/</span>
-            <span>e-Library</span>
+          <div className="header-content">
+            <h1>📚 e-Library</h1>
+            <p>Discover our comprehensive collection of computer science resources</p>
+            <div className="breadcrumb">
+              <Link to="/">Home</Link>
+              <span>/</span>
+              <span>e-Library</span>
+            </div>
           </div>
         </div>
       </section>
@@ -52,22 +54,29 @@ export default function Books() {
       <section className="books-content">
         <div className="container">
           <div className="search-section">
+            <div className="search-header">
+              <h2>Search Resources</h2>
+              <p>Find exactly what you&apos;re looking for</p>
+            </div>
             <div className="search-box">
+              <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
               <input
                 type="text"
-                placeholder="Search books by title or author..."
+                placeholder="Search by title or author..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button type="button">🔍</button>
             </div>
           </div>
 
-          <div className="books-grid">
+          <div className="books-main">
             {/* Sidebar */}
             <aside className="books-sidebar">
               <div className="sidebar-section">
-                <h3>Categories</h3>
+                <h3>Filter by Category</h3>
                 <div className="category-filter">
                   {categories.map(category => (
                     <label key={category} className="category-item">
@@ -84,37 +93,44 @@ export default function Books() {
                 </div>
               </div>
 
-              <div className="sidebar-section">
-                <h3>Results</h3>
-                <p>{filteredBooks.length} book{filteredBooks.length !== 1 ? 's' : ''} found</p>
+              <div className="sidebar-section stats">
+                <div className="stat-item">
+                  <span className="stat-label">Results</span>
+                  <span className="stat-value">{filteredBooks.length}</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-label">Total</span>
+                  <span className="stat-value">{BOOKS_DATA.length}</span>
+                </div>
               </div>
             </aside>
 
             {/* Books List */}
             <div className="books-list">
               {filteredBooks.length > 0 ? (
-                <div className="books-table">
-                  <div className="table-header">
-                    <div className="col-title">Title</div>
-                    <div className="col-author">Author</div>
-                    <div className="col-category">Category</div>
-                    <div className="col-year">Year</div>
-                  </div>
+                <div className="books-cards">
                   {filteredBooks.map(book => (
-                    <div key={book.id} className="table-row">
-                      <div className="col-title">{book.title}</div>
-                      <div className="col-author">{book.author}</div>
-                      <div className="col-category">
-                        <span className="category-badge">{book.category}</span>
+                    <div key={book.id} className="book-card">
+                      <div className="book-icon">📖</div>
+                      <div className="book-content">
+                        <h4 className="book-title">{book.title}</h4>
+                        <p className="book-author">by {book.author}</p>
+                        <div className="book-meta">
+                          <span className="book-category">{book.category}</span>
+                          <span className="book-year">{book.year}</span>
+                        </div>
                       </div>
-                      <div className="col-year">{book.year}</div>
+                      <div className="book-action">
+                        <button className="btn-access">Access →</button>
+                      </div>
                     </div>
                   ))}
                 </div>
               ) : (
                 <div className="no-results">
-                  <h3>No books found</h3>
-                  <p>Try adjusting your search terms or filters</p>
+                  <div className="no-results-icon">🔍</div>
+                  <h3>No resources found</h3>
+                  <p>Try adjusting your search or filters to find what you&apos;re looking for</p>
                 </div>
               )}
             </div>

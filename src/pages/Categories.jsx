@@ -93,18 +93,25 @@ export default function Categories() {
 
       <section className="categories-content">
         <div className="container">
+          <div className="content-header">
+            <h2>Explore by Subject</h2>
+            <p>Find the exact resources you need by browsing our categories</p>
+          </div>
           <div className="categories-grid">
             {CATEGORIES.map((category, index) => (
               <div key={index} className="category-card">
-                <div className="category-icon">{category.icon}</div>
+                <div className="card-header">
+                  <span className="category-icon">{category.icon}</span>
+                  <span className="resource-badge">{category.books}</span>
+                </div>
                 <h3>{category.name}</h3>
                 <p>{category.description}</p>
-                <div className="category-footer">
-                  <span className="book-count">{category.books} resources</span>
-                  <Link to="/books" className="explore-btn">
-                    Explore →
-                  </Link>
-                </div>
+                <Link to="/books" className="explore-link">
+                  <span>Explore Resources</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </Link>
               </div>
             ))}
           </div>
@@ -113,11 +120,13 @@ export default function Categories() {
 
       <section className="categories-cta">
         <div className="container">
-          <h2>Start Exploring</h2>
-          <p>Browse our comprehensive collection of computer science resources</p>
-          <Link to="/books" className="btn btn-primary">
-            View All Resources
-          </Link>
+          <div className="cta-content">
+            <h2>Explore Our Complete Collection</h2>
+            <p>Access thousands of resources curated for your learning journey</p>
+            <Link to="/books" className="btn btn-primary">
+              Browse All Resources
+            </Link>
+          </div>
         </div>
       </section>
     </div>
