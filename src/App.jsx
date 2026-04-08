@@ -1,10 +1,5 @@
 import { useState } from 'react'
 import '../style.css'
-import '../css/bootstrap.css'
-import '../css/font-awesome.css'
-import '../css/flaticon.css'
-import '../css/slick-slider.css'
-import '../css/prettyphoto.css'
 import '../css/color.css'
 import '../css/responsive.css'
 

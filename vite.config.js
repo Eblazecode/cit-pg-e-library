@@ -17,6 +17,10 @@ export default defineConfig({
       protocol: 'ws',
       host: 'localhost',
       port: 3000
-    }
+    },
+    sourcemapIgnoreList: () => true
+  },
+  build: {
+    sourcemap: false
   }
 })
