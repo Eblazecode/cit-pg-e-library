@@ -46,7 +46,44 @@ body {
 .hero p {
     color: #cbd5f5;
 }
+.hero {
+    padding: 100px 0;
+    background: #062509;
+    color: #fff;
+    text-align: center;
+}
 
+.hero h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero p {
+    color: #cbd5f5;
+    margin-top: 10px;
+}
+
+/* NAVIGATION STYLE */
+.hero-nav {
+    margin-top: 25px;
+}
+
+.hero-nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.hero-nav a:hover {
+    background: #044406;
+}
 /* SECTION */
 #program-resources {
     background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
@@ -137,10 +174,17 @@ footer {
 
 <!-- HERO -->
 <section class="hero">
-    <div class="container">
+    <div class="container text-center">
         <img src="images/images/veritaslogo.jpg" width="120">
         <h2>Program Resource Library</h2>
         <p>Explore curated academic resources across key computing domains</p>
+
+        <!-- NAVIGATION -->
+        <div class="hero-nav mt-4  text-success">
+            <a href="index.html">Home </a>
+            <a href="programs.html">Programs  </a>
+
+        </div>
     </div>
 </section>
 
@@ -193,33 +237,32 @@ footer {
                 </div>
             </div>
 
-            <!-- DATA SCIENCE -->
+
+            <!-- cybersecurity  -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="program-card text-center">
-                    <h4>Data Science</h4>
-                    <p>Analyze and visualize data to generate insights.</p>
+                    <h4>Cyber Security</h4>
+                    <p>Protect systems and defend against cyber threats.</p>
 
                     <div class="resource-highlight">
                         <span>Books</span>
-                        <span>Analytics</span>
-                        <span>Datasets</span>
-                        <span>Projects</span>
+                        <span>Manuals</span>
+                        <span>Security</span>
+                        <span>Research</span>
+                        <span>Tutorials</span>
                     </div>
 
-                    <a href="datascience.html" class="main-btn">Browse Resources</a>
+                    <a href="cybersecurity.html" class="main-btn">Browse Resources</a>
                 </div>
             </div>
-
-
-            <!-- INFO SYSTEM -->
-           <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
     <div class="program-card text-center">
         <h4>Information Systems</h4>
         <p>Focus on managing information, business processes, and technology solutions that support organizational decision-making.</p>
 
         <div class="resource-highlight">
             <span>Books</span>
-            <span>journals</span>
+            <span>Journals </span>
             <span>Case Studies</span>
             <span>Business Tools</span>
             <span>Databases</span>
